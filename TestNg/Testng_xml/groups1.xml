@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="groups">
+	<test name="groups_Run">
+		<groups>
+			<run>
+				<include name="sanity" />
+				<include name="smoke" />
+				<include name="regression"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="GroupAndDependsOnGroup.UserTests"></class>
+			<class name="GroupAndDependsOnGroup.TransactionTests"></class>
+		</classes>
+	</test>
+</suite>

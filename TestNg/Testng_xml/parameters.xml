@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="paarameters">
+	<test name="parameters_methods">
+		<parameter name="num1" value="20"></parameter>
+		<parameter name="num2" value="10"></parameter>
+		<parameter name="num3" value="50"></parameter>
+		<parameter name="num4" value="25"></parameter>
+		<classes>
+			<class name="Parameter.MathOperations1" />
+		</classes>
+	</test>
+</suite>
