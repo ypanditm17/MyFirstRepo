@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [paarameters]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="parameters_methods(failed)">
-    <parameter name="num1" value="20"/>
-    <parameter name="num2" value="10"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Parameter.MathOperations1">
+      <class name="Parallel_Class.ClassTest1Test">
         <methods>
-          <include name="minus1"/>
+          <include name="testCTest"/>
+          <include name="testATest"/>
+          <include name="testBTest"/>
         </methods>
-      </class> <!-- Parameter.MathOperations1 -->
+      </class> <!-- Parallel_Class.ClassTest1Test -->
     </classes>
-  </test> <!-- parameters_methods(failed) -->
-</suite> <!-- Failed suite [paarameters] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
